@@ -23,26 +23,19 @@ async def start(c, m, cb=False):
         send_msg = await m.reply_text("**Processing...**", quote=True)
 
     owner = await c.get_users(int(OWNER_ID))
-    owner_username = owner.username if owner.username else 'MN_BOTZ_UPDATES'
+    owner_username = owner.username if owner.username else 'kxzen_bots'
 
     # start text
     text = f"""Hey! {m.from_user.mention(style='md')}
     
 ɪ ᴄᴀɴ ꜱᴛᴏʀᴇ ᴘʀɪᴠᴀᴛᴇ ꜰɪʟᴇꜱ ɪɴ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜꜱᴇʀꜱ ᴄᴀɴ ᴀᴄᴄᴇꜱꜱ ɪᴛ ꜰʀᴏᴍ ꜱᴘᴇᴄɪᴀʟ ʟɪɴᴋ
-
-<a href=https://t.me/TAMIL_FLIMS_HD>🔰✥ ▷ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ◁</a>
-
-<a href=https://t.me/+lp5mOR6wSMIyMzY1>🔰✥ ▷ ꜰʟɪᴍꜱ ʜᴅ ᴏꜰꜰɪᴄɪᴀʟ ꜰɪʟᴇ 1 ◁</a>
-
-<a href=https://t.me/+VyuE_q8JC9UzZTll>🔰✥ ▷ ꜰʟɪᴍꜱ ʜᴅ ᴏꜰꜰɪᴄɪᴀʟ ꜰɪʟᴇ 2 ◁</a>
-
-<a href=https://t.me/+TJzbQrEhZBg3ZGRl>🔰✥ ▷ ꜰʟɪᴍꜱ ʜᴅ ᴏꜰꜰɪᴄɪᴀʟ ꜰɪʟᴇ 3 ◁</a>
+owner anonymous
 """
 
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ', url="https://t.me/+dyvRr3LZxlI4ZjVl"),
+            InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇ', url="https://t.me/kxzen_bots"),
             InlineKeyboardButton('ʜᴇʟᴩ 💡', callback_data="help")
         ],
         [
